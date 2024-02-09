@@ -4,6 +4,24 @@ import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
 
 public final class Constants {
+
+    public static final class AmpConstants {
+        public static final int AMP_SWITCH_ONE_CHANNEL = 0;
+        public static final int AMP_SWITCH_TWO_CHANNEL = 1;
+
+        public static final int AMP_MOTOR_ONE_ID = 0;
+        public static final int AMP_MOTOR_TWO_ID = 1;
+
+        public static final double AMP_MOTOR_VOLTAGE = 0.0;
+    }
+
+    public static final class ClimberMotorConstants {
+        public static final double CLIMBER_VOLTAGE = 0;
+        public static final int CLIMBER_MOTOR_ONE_ID = 0;
+        // second climb motor
+        public static final int CLIMBER_MOTOR_TWO_ID = 0;
+    }
+
     public static final class SwerveModuleConstants {
         public static final double DRIVE_MOTOR_KS = 0.0;
         public static final double DRIVE_MOTOR_KV = 0.0;
@@ -59,5 +77,34 @@ public final class Constants {
         public static final int INTAKE_MOTOR_ID = 0;
 
         public static final double INTAKE_MOTOR_VOLTAGE = 5.0;
+    }
+
+    public static final class ShooterConstants {
+        public static final int SHOOTER_MOTOR_ID = 16;
+
+        public static final double SHOOTER_MOTOR_VOLTAGE = 0.5;
+    }
+
+    public static final class ControllerConstants {
+        // drive controller button IDs
+        public static final int BUTTON_A = 1;
+        public static final int BUTTON_B = 2;
+        public static final int BUTTON_X = 3;
+        public static final int BUTTON_Y = 4;
+        public static final int BUTTON_LB = 5;
+        public static final int BUTTON_RB = 6;
+        public static final int BUTTON_BACK = 7;
+        public static final int BUTTON_START = 8;
+        public static final int LEFT_STICK_PRESS_DOWN = 9;
+        public static final int RIGHT_STICK_PRESS_DOWN = 10;
+
+        // shooter is using A, X, and right trigger
+        // Climb wants go use RB and LB
+
+        // drive controller axis IDs
+        public static final int LEFT_STICK_AXIS = 1;
+        public static final int RIGHT_STICK_AXIS = 5;
+        public static final int LEFT_TRIGGER_AXIS = 2;
+        public static final int RIGHT_TRIGGER_AXIS = 3; 
     }
 }

@@ -24,7 +24,7 @@ public final class AutoCommands {
     public static InstantCommand tutorialAuto() {
         return new InstantCommand(
             () -> {
-                PathPlannerPath path = PathPlannerPath.fromPathFile("Tutorial Path");
+                PathPlannerPath path = PathPlannerPath.fromPathFile("Example Path");
 
                 List<PathPoint> pathpoints = path.getAllPathPoints();
                 ArrayList<Translation2d> innerPoints = new ArrayList<Translation2d>();
